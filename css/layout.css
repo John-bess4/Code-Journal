@@ -11,12 +11,19 @@
 .row {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+  flex-direction: column;
 }
 
 .column-full,
 .column-half {
   width: 100%;
 }
+textarea {
+  width: 100%;
+  height: 200px;
+}
+
 
 @media screen and (min-width: 768px) {
   .container {
@@ -31,4 +38,16 @@
   .column-half {
     width: 50%;
   }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      flex-direction: row;
+    }
+
+    textarea{
+      width: 100%;
+      height: 200px;
+    }
 }
